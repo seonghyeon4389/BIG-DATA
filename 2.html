@@ -3,29 +3,78 @@
 <head>
   <title>BIG data application</title>
   <meta charset="utf-8">
+  <style>
+  body{
+    margin:0;
+  }
+  a {
+    color:black;
+    text-decoration: none;s
+  }
+  h1 {
+    font-size:45px;
+    text-align: center;
+    border-bottom:2px solid gray;
+    margin:0;
+    padding:20px;
+
+  }
+  ol {
+       border-right: 2px solid gray;
+       width:245px;
+       margin:0;
+       padding: 20px;
+
+  }
+  #grid{
+      display: grid;
+      grid-template-columns:150px 1fr;
+  }
+  #grid ol{
+             padding-left:25px
+  }
+  #article{
+    padding-left: 150px;
+  }
+  @media (max-width:900px) {
+    #grid{
+        display: block;
+    }
+  ol {
+        border-right:none;
+    }
+    h1 {
+  border-bottom:none;
+  }
+  }
+  </style>
 </head>
 <body>
   <h1><a href="index.html">BIG DATA</a></h1>
-  <ol>
-    <li><a href="1.html">Big data processing</a></li>
-    <li><a href="2.html">Big data application</a></li>
-    <li><a href="3.html">Big data processing software</a></li>
-  </ol>
-  <h2>Big data application</h2>
-  <img src="matricks.jpg" width="45%">
-  <ul>
-    <li>sabermetrics</li>
-    선수 평가 및 전략 전술 토대를 쌓는 가장 기본적인 기록 해석을
-    위해 빅 데이터 프로세싱의 개념을 도입했다. 특히 1년에 100경기
-    이상을 소화하며 빅데이터를 모으기 쉬운 프로야구에서 매우
-    보편화되었다.
-   <li>정당 후보의 선거 유세</li>
-   빅데이터 정보에 따라 현수막을 다는 위치를 결정하고 시간대별로 사람이 많이 모이는
-   장소를 예측해 선거 유세에 활용한 것이다. 일부 후보는 빅데이터를
-   이용해 지역별 맞춤 공약도 제시했다.
-   <li>검색엔진의 검색어 분포도를 통한 데이터 추출</li>
-  특정 사용자가 검색하는 검색어 패턴이나 클릭해서 본 적이 있는 각종
-  인터넷 광고들의 통계를 내서 정확도 순서로 맞춰 사용한다.
-  </ul>
+ <div id="grid">
+    <ol>
+      <li><a href="1.html">Big data processing</a></li>
+      <li><a href="2.html"style="color:red;text-decoration:underline;">Big data application</a></li>
+      <li><a href="3.html">Big data processing software</a></li>
+    </ol>
+  <div id="article">
+    <h2>Big data application</h2>
+    <img src="matricks.jpg" width="45%">
+    <ul>
+      <li>sabermetrics</li>
+      선수 평가 및 전략 전술 토대를 쌓는 가장 기본적인 기록 해석을
+      위해 빅 데이터 프로세싱의 개념을 도입했다. 특히 1년에 100경기
+      이상을 소화하며 빅데이터를 모으기 쉬운 프로야구에서 매우
+      보편화되었다.
+     <li>정당 후보의 선거 유세</li>
+     빅데이터 정보에 따라 현수막을 다는 위치를 결정하고 시간대별로 사람이 많이 모이는
+     장소를 예측해 선거 유세에 활용한 것이다. 일부 후보는 빅데이터를
+     이용해 지역별 맞춤 공약도 제시했다.
+     <li>검색엔진의 검색어 분포도를 통한 데이터 추출</li>
+    특정 사용자가 검색하는 검색어 패턴이나 클릭해서 본 적이 있는 각종
+    인터넷 광고들의 통계를 내서 정확도 순서로 맞춰 사용한다.
+    </ul>
+  </div>
+ </div>
 </body>
 </html>

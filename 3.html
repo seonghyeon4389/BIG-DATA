@@ -3,15 +3,62 @@
 <head>
   <title>BIG data processing software</title>
   <meta charset="utf-8">
+  <style>
+  body{
+    margin: 0;
+  }
+  h1{
+    text-align: center;
+    font-size: 45px;
+    border-bottom: 2px solid gray;
+    margin: 0;
+    padding: 20px
+  }
+  a {
+    color:black;
+    text-decoration:none;
+  }
+  ol{
+      border-right:2px solid gray;
+      width: 245px;
+      margin: 0;
+      padding: 20px;
+  }
+  #grid{
+    display: grid;
+    grid-template-columns:150px 1fr;
+  }
+  #article{
+    padding-left: 150px;
+  }
+  #grid ol{
+             padding-left:25px
+  }
+  @media(max-width:900px){
+    #grid{
+      display: block;
+    }
+    ol{
+        border-right:none;
+  }
+    h1{
+    border-bottom:none;
+ }
+  }
+  </style>
 </head>
 <body>
   <h1><a href="index.html">BIG DATA</a></h1>
-  <ol>
-    <li><a href="1.html">Big data processing</a></li>
-    <li><a href="2.html">Big data application</a></li>
-    <li><a href="3.html">Big data processing software</a></li>
-  </ol>
-  <h2>Big data processing software</h2>
-  <img src="big data soft ware.jpg" width="45%">
+  <div id="grid">
+    <ol>
+      <li><a href="1.html">Big data processing</a></li>
+      <li><a href="2.html">Big data application</a></li>
+      <li><a href="3.html"style="color:red;text-decoration:underline;">Big data processing software</a></li>
+    </ol>
+   <div id="article">
+    <h2>Big data processing software</h2>
+    <img src="big data soft ware.jpg" width="45%">
+   </div>
+  </div>
 </body>
 </html>
